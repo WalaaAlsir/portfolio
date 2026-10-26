@@ -1,0 +1,98 @@
+/* تنسيقات عامة متناغمة ومريحة للعين */
+body {
+    background-color: #0d1117;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* الهيدر الرئيسي */
+.profile-header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #30363d;
+    margin-bottom: 30px;
+}
+
+.profile-header h1 {
+    color: #58a6ff;
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.profile-header p {
+    color: #8b949e;
+    font-size: 16px;
+}
+
+/* بطاقات المشاريع */
+.projects-section h2 {
+    color: #3fb950;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.project-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    border-color: #58a6ff;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #f0f6fc;
+    font-size: 18px;
+}
+
+.project-card p {
+    color: #c9d1d9;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* أزرار الروابط */
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #238636;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.project-link:hover {
+    background-color: #2ea043;
+}
+
+/* تجاوب ممتاز مع الموبايل */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+    .profile-header h1 {
+        font-size: 22px;
+    }
+    .project-card {
+        padding: 15px;
+    }
+}
